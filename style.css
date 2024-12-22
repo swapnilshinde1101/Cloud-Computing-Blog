@@ -1,0 +1,69 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+  }
+  
+  header {
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .card {
+    margin-top: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .card-body{
+    background-color: aliceblue;
+    border-radius: 5%;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .card-content {
+    display: none;
+  }
+  .card-content.show {
+    display: block;
+  }
+  .card-btn {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+  }
+  .card-btn:hover {
+    text-decoration: underline;
+  }
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+
+

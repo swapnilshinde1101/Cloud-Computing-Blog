@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cloud Computing Overview</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add hover effect to the card */
+    .hover-effect {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+        transform: scale(1.05); /* Scale the card slightly when hovered */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    }
+
+    /* Optional: Add a slight scale effect on the "Read More" text when hovered */
+    .card-btn {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .card-btn:hover {
+        transform: scale(1.1); /* Slightly enlarge the "Read More" text on hover */
+    }
+
+    /* Hide the extra content by default */
+    .card-content {
+        display: none;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Cloud Computing Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li class="nav-item"><a class="nav-link" href="#platforms">Platforms</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
+      <li class="nav-item"><a class="nav-link" href="#Benefits">Benefits</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- Header -->
+ <div
+<header class="bg-light text-center py-5" >
+  <h1>Understanding Cloud Computing Basics and Services</h1>
+  <p class="lead">Learn the fundamentals of cloud computing and the key services provided by AWS, Azure, Google Cloud Platform, and more.</p>
+</header>
+</div>
+
+<!-- Introduction Section -->
+<section id="introduction" class="container my-6">
+  <h2 class="text-primary text-center">What is Cloud Computing?</h2><br>
+  <p>Cloud computing refers to the delivery of computing services like servers, storage, databases, networking, software, and more over the internet. It allows businesses and individuals to access technology resources without owning physical infrastructure.</p>
+</section>
+
+<!-- Main Content with Information Cards -->
+<div class="container my-5">
+  <!-- Popular Cloud Platforms Section -->
+  <section id="platforms">
+    <h2 class="text-primary text-center">Popular Cloud Platforms</h2><br><br>
+    <div class="row">
+      <!-- AWS Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+            <img src="Amazon_Web_Services_Logo.svg.png" class="card-img-top" alt="AWS Services">
+            <div class="card-body">
+                <h5 class="card-title">AWS Services</h5>
+                <p class="card-text">Explore popular AWS services like EC2, S3, and RDS that offer computing, storage, and database solutions.</p>
+                <div class="card-content">
+                    <p>AWS (Amazon Web Services) offers a vast range of services including EC2 for virtual servers, S3 for object storage, Lambda for serverless computing, and RDS for managed databases.</p>
+                </div>
+                <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Azure Card -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm hover-effect">
+            <img src="Azure Services.jpeg" class="card-img-top" alt="Azure Services" >
+            <div class="card-body">
+              <h5 class="card-title">Azure Services</h5>
+              <p class="card-text">Learn about Microsoft Azure services like Virtual Machines, Blob Storage, and SQL Database for enterprise solutions.</p>
+              <div class="card-content">
+                <p> Azure provides enterprise-level solutions, including Virtual Machines, Blob Storage for scalable data storage , and SQL Database for managed SQL environments.   It's widely used in corporate environments.</p>
+              </div>
+              <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+            </div>
+          </div>
+        </div>
+
+       <!-- Google Cloud Card -->
+       <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Google Cloud Services.png" class="card-img-top" alt="AWS Services" >
+          <div class="card-body">
+            <h5 class="card-title">Google Cloud Services</h5>
+            <p class="card-text">Discover Google Cloud Platform services like Compute Engine, Cloud Storage, and BigQuery for big data analysis.</p>
+            <div class="card-content">
+              <p>Google Cloud provides powerful tools for data analysis, storage, and computing, such as Compute Engine for VMs, Cloud Storage for scalable storage, and BigQuery for big data analytics.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IBM Cloud Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="IBM cloud.png" class="card-img-top" alt="IBM Cloud Services">
+          <div class="card-body">
+            <h5 class="card-title">IBM Cloud Services</h5>
+            <p class="card-text">Explore IBM Cloud services including AI, Watson, and cloud-native development platforms.</p>
+            <div class="card-content">
+              <p>IBM Cloud provides AI-powered services like Watson for machine learning and analytics, along with tools for cloud-native development, microservices, and security solutions.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oracle Cloud Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="oracal cloud.png" class="card-img-top" alt="Oracle Cloud Services">
+          <div class="card-body">
+            <h5 class="card-title">Oracle Cloud Services</h5>
+            <p class="card-text">Learn about Oracle Cloud services including Autonomous Database, Cloud Infrastructure, and Enterprise Apps.</p>
+            <div class="card-content">
+              <p>Oracle Cloud offers database management services, including Autonomous Database, as well as infrastructure services and a suite of enterprise applications for various industries.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alibaba Cloud Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="alibaba cloud.png" class="card-img-top" alt="Alibaba Cloud Services">
+          <div class="card-body">
+            <h5 class="card-title">Alibaba Cloud Services</h5>
+            <p class="card-text">Explore Alibaba Cloud services like Elastic Compute Service, Cloud Database, and AI solutions.</p>
+            <div class="card-content">
+              <p>Alibaba Cloud offers solutions for computing, data storage, and AI. Services like Elastic Compute Service (ECS), ApsaraDB for databases, and AI-based tools are part of its offering.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DigitalOcean Cloud Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="DigitalOcean.png" class="card-img-top" alt="DigitalOcean Cloud Services">
+          <div class="card-body">
+            <h5 class="card-title">DigitalOcean Cloud Services</h5>
+            <p class="card-text">Learn about DigitalOcean's cloud services, including Droplets, Managed Databases, and Kubernetes.</p>
+            <div class="card-content">
+              <p>DigitalOcean focuses on simplicity and scalability. It offers cloud solutions like Droplets for virtual servers, Managed Databases, and Kubernetes for containerized applications.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container my-5">
+    <!-- Popular Cloud Platforms Section -->
+    <section id="Benefits">
+      <h2 class="text-primary text-center">Benefits of Cloud Computing</h2><br><br>
+      <div class="row">
+      <!-- Security Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Security servises.jpeg" class="card-img-top" alt="Security">
+          <div class="card-body">
+            <h5 class="card-title">Security</h5>
+            <p class="card-text">Cloud computing platforms offer robust security mechanisms to protect sensitive data.</p>
+            <div class="card-content">
+              <p>Cloud providers invest heavily in cybersecurity, ensuring data protection through encryption, firewalls, and compliance with industry standards.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location Independent Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Location Independent.webp" class="card-img-top" alt="Location Independent">
+          <div class="card-body">
+            <h5 class="card-title">Location Independent</h5>
+            <p class="card-text">Access your data and applications from anywhere in the world with cloud computing.</p>
+            <div class="card-content">
+              <p>Cloud services allow businesses to work remotely, making it easier to collaborate across different geographical locations without the need for physical infrastructure.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flexibility Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Flexibility.jpeg" class="card-img-top" alt="Flexibility">
+          <div class="card-body">
+            <h5 class="card-title">Flexibility</h5>
+            <p class="card-text">Cloud computing offers flexible solutions that can easily scale according to your business needs.</p>
+            <div class="card-content">
+              <p>With cloud services, you can scale up or down resources based on demand, ensuring cost-effective operations and optimal performance.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Disaster Recovery Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Disaster Recovery.png" class="card-img-top" alt="Disaster Recovery">
+          <div class="card-body">
+            <h5 class="card-title">Disaster Recovery</h5>
+            <p class="card-text">Cloud computing offers efficient disaster recovery solutions to minimize downtime.</p>
+            <div class="card-content">
+              <p>In case of failure, cloud platforms ensure business continuity through reliable backup and recovery solutions, allowing for quick recovery from disasters.</p>
+            </div><br>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automatic Software Updates Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Automatic Software Updates.jpeg" class="card-img-top" alt="Automatic Software Updates">
+          <div class="card-body">
+            <h5 class="card-title">Automatic Software Updates</h5>
+            <p class="card-text">Cloud providers handle software updates, ensuring you have the latest features and security patches.</p>
+            <div class="card-content">
+              <p>Cloud services automatically update your applications and systems to keep them secure and running smoothly, saving you time and resources.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pay as You Go Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Pay as You Go.jpeg" class="card-img-top" alt="Pay as You Go">
+          <div class="card-body">
+            <h5 class="card-title">Pay as You Go</h5>
+            <p class="card-text">Cloud computing offers a flexible pricing model, allowing you to pay only for the resources you use.</p>
+            <div class="card-content">
+              <p>The "pay-as-you-go" model enables businesses to manage costs effectively by paying for cloud services based on usage rather than fixed fees.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Document Control Card -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm hover-effect">
+          <img src="Document Control.png" class="card-img-top" alt="Document Control">
+          <div class="card-body">
+            <h5 class="card-title">Document Control</h5>
+            <p class="card-text">Cloud computing ensures efficient document control and version management for businesses.</p>
+            <div class="card-content">
+              <p>With cloud storage, you can securely store, manage, and collaborate on documents, ensuring that only authorized users can access or edit them.</p>
+            </div>
+            <p class="card-btn text-center" onclick="toggleContent(this)">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-3 mt-5">
+  <p>&copy; 2023 Cloud Computing Blog. All rights reserved. | Powered by Swapnil Shinde. </p>
+</footer>
+
+
+<!-- Bootstrap JS and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!-- Place this JavaScript at the end of your body tag -->
+<script>
+  function toggleContent(element) {
+    const content = element.previousElementSibling;
+    content.classList.toggle('show');
+    element.textContent = content.classList.contains('show') ? "Read Less" : "Read More";
+  }
+
+  // Function to toggle the content visibility
+  function toggleContent(element) {
+      var content = element.closest('.card').querySelector('.card-content');
+      content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
